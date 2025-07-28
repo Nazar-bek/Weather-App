@@ -10,7 +10,9 @@ export function useForecast() {
     if (!city) return;
     const fetchForecast = async () => {
       dispatch({ type: "FETCH_FORECAST" });
-      const API_KEY = import.meta.env.VITE_API_ID
+      const API_KEY = import.meta.env.VITE_API_ID;
+      console.log(API_KEY);
+      
       try {
         const res = await axios(
           `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=${unit}&lang=en`
