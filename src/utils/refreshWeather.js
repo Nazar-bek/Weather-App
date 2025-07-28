@@ -7,10 +7,10 @@ export async function refreshWeather(dispatch, city, unit) {
 
   dispatch({ type: "FETCH_WEATHER" });
   dispatch({ type: "FETCH_FORECAST" });
-  const apiKey = import.meta.env.VITE_API_ID;
+  const API_KEY = import.meta.env.VITE_API_ID;
 
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${apiKey}`;
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}&lang=en`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${API_KEY}`;
+  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=${unit}&lang=en`;
 
   try {
     const [weatherRes, forecastRes] = await Promise.all([
