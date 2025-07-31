@@ -1,4 +1,3 @@
-// src/components/LineChart.jsx
 import React from "react";
 
 const ChartWeatherData = ({ points, pathData,padding, chartWidth, chartHeight, minTemp, maxTemp, unitSymbol }) => {

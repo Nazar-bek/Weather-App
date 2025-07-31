@@ -8,7 +8,7 @@ const ForecastItem = ({ data }) => {
     month: "long",
     day: "numeric",
   });
-  console.log(weather);
+
   const { state } = useWeather();
 
   const unitSymbol = state.unit === "metric" ? "°C" : "°F";

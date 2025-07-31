@@ -23,7 +23,6 @@ export default function Dashboard() {
           dispatch({ type: "CHANGE_CITY", payload: city })
         }
         dispatch={dispatch}
-        
       />
       <FadeTransition key={state.currentTab} dependency={state.currentTab}>
         <div className="p-4">
