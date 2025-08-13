@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <ErrorBoundry>
-        <main className="min-h-screen bg-[#f8f9fa] pt-10 dark:bg-[#212529] text-[#212529] dark:text-[#f8f9fa]  transition">
+        <main className="min-h-screen bg-[#f8f9fa] lg:pt-10 dark:bg-[#212529] text-[#212529] dark:text-[#f8f9fa]  transition">
           <Dashboard />
         </main>
       </ErrorBoundry>

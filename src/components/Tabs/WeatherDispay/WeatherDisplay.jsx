@@ -26,7 +26,7 @@ const WeatherDisplay = () => {
   if (!weather) return null;
 
   return (
-    <div className="max-w-md mx-auto p-6 rounded-2xl shadow-lg bg-white dark:bg-[#1c1f23] text-gray-800 dark:text-gray-100 space-y-4">
+    <div className="max-w-md mx-auto p-6 rounded-2xl shadow-lg bg-white dark:bg-[#1c1f23] text-gray-800 dark:text-gray-100 space-y-8">
       <h2 className="text-3xl font-bold">{weather.name}</h2>
       <p className="text-lg capitalize text-gray-600 dark:text-gray-300">
         {weather.weather[0].description}
